@@ -1,0 +1,172 @@
+/* Designed with care by Galib Mahmud */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+.bg-area {
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	position: relative;
+	z-index: 999;
+}
+
+.bg-img {
+	background: #62bb4c url(../img/black30.jpg) no-repeat center / cover;
+}
+
+.bg-img::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(48, 13, 13, 0.5);
+}
+
+
+/* ---- Contents
+------------------------------------------------- */
+
+.all-contents {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, 5%);
+	width: 710px;
+	text-align: center;
+}
+
+.all-contents h5 {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	font-size: 54px;
+	font-weight: 700;
+	background: -o-linear-gradient(315deg, #ffdb57, #ffffff);
+	background: linear-gradient(135deg, #ffdb57, #ffffff);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.all-contents span {
+	font-size: 60px;
+	font-weight: 300;
+	background: -o-linear-gradient(315deg, #ffffff, #ffdb57, #ffffff);
+	background: linear-gradient(135deg, #ffffff, #ffdb57, #ffffff);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	word-spacing: 3px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.all-contents span b {
+	font-size: 60px;
+	font-weight: 600;
+	background: -o-linear-gradient(315deg, #ffffff, #ffdb57, #ffffff);
+	background: linear-gradient(135deg, #ffffff, #ffdb57, #ffffff);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	word-spacing: 3px;
+}
+
+.ah-headline.clip .ah-words-wrapper::after {
+	background-color: rgba(255, 232, 150, 0.8);
+	color: #e5ff00;
+}
+
+
+/* ----Social Icons
+------------------------------------------------- */
+
+.social-icons ul {
+	margin-top: 10px;
+}
+
+.social-icons ul li {
+	list-style-type: none;
+	display: inline-block;
+	margin: 0 10px;
+}
+
+.social-icons ul li a {
+	font-size: 30px;
+	color: rgba(255, 232, 150, 0.801);
+	-webkit-transition: all ease .3s;
+	-o-transition: all ease .3s;
+	transition: all ease .3s;
+}
+
+.social-icons ul li:hover a {
+	color: #fff;
+}
+
+
+/* ----Responsive
+------------------------------------------------- */
+
+@media only screen and (max-width: 665px) {
+	.all-contents h5 {
+		font-size: 42px;
+		font-weight: 600;
+	}
+	.all-contents span {
+		font-size: 43px;
+	}
+	.all-contents span b {
+		font-size: 43px;
+		font-weight: 600;
+	}
+}
+
+@media only screen and (max-width: 490px) {
+	.all-contents h5 {
+		font-size: 36px;
+		font-weight: 500;
+	}
+	.all-contents span {
+		font-size: 37px;
+		font-weight: 200;
+	}
+	.all-contents span b {
+		font-size: 30px;
+		font-weight: 500;
+	}
+	.all-contents .social-icons li a {
+		font-size: 24px;
+	}
+}
+
+@media only screen and (max-width: 370px) {
+	.all-contents h5 {
+		font-size: 29px;
+		font-weight: 400;
+	}
+	.all-contents span {
+		font-size: 30px;
+		font-weight: 200;
+	}
+	.all-contents span b {
+		font-size: 30px;
+		font-weight: 400;
+	}
+	.all-contents .social-icons li a {
+		font-size: 24px;
+	}
+}
