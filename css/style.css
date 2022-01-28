@@ -150,7 +150,7 @@ body {
 		font-size: 30px;
 		font-weight: 500;
 	}
-	.all-contents .social-icons li a {
+	.social-icons ul li a ion-icon {
 		font-size: 24px;
 	}
 }
@@ -168,7 +168,7 @@ body {
 		font-size: 30px;
 		font-weight: 400;
 	}
-	.all-contents .social-icons li a {
+	.social-icons ul li a ion-icon {
 		font-size: 24px;
 	}
 }
