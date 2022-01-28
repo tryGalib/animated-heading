@@ -95,27 +95,29 @@ body {
 /* ----Social Icons
 ------------------------------------------------- */
 
-.social-icons ul {
-	margin-top: 10px;
-}
-
 .social-icons ul li {
 	list-style-type: none;
 	display: inline-block;
 	margin: 0 10px;
 }
 
-.social-icons ul li a {
+.social-icons ul li a ion-icon {
 	font-size: 30px;
-	color: rgba(255, 232, 150, 0.801);
+	background-color: rgba(167, 128, 22, 0.5);
+	padding: 10px;
+	border-radius: 50%;
+	color: #fff;
 	-webkit-transition: all ease .3s;
 	-o-transition: all ease .3s;
 	transition: all ease .3s;
+
 }
 
-.social-icons ul li:hover a {
+.social-icons ul li:hover a ion-icon {
 	color: #fff;
+	background-color: #a17d17;
 }
+
 
 
 /* ----Responsive
